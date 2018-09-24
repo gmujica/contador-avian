@@ -1,6 +1,6 @@
 ## Folder Structure
 ```
-my-app/
+cuanta-avian/
   README.md
   node_modules/
   package.json
@@ -8,6 +8,18 @@ my-app/
     index.html
     favicon.ico
   src/
+    components/
+        Carrousel.jsx
+        Countdown.jsx
+        Footer.jsx
+        Header.jsx
+        Option1.jsx
+        Option2.jsx
+        Option3.jsx
+      img/
+          1--15.png
+          A.png
+          AT.png
     App.css
     App.js
     App.test.js
@@ -24,3 +36,8 @@ In the project directory, you can run:
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## Frameworks
+
+### `Bulma (css)`
+### `Material-UI`
