@@ -40,20 +40,17 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ## Frameworks
 
 ### `Bulma (css)`
-  ```
     This Framework is integrated in the Countdown component, it shows the numbers of the countdown.
 
-    [https://bulma.io](https://bulma.io)
-  ```
+    [https://bulma.io]
+
 ### `Material-UI`
-  ```
     Material design framework, implemented in the header and the Grid system in all the components.
 
-    [https://material-ui.com](https://material-ui.com)
-  ```
+    https://material-ui.com
+
 ### `Moments.js`
-  ```
+
     Framework for manipulation of dates.
 
-    [https://momentjs.com](https://momentjs.com)
-  ```
+    (https://momentjs.com)
