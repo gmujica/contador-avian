@@ -3,11 +3,8 @@ import moment from 'moment'
 import Paper from '@material-ui/core/Paper'
 
 const paperStyle = {
-  //background-color: rgba(0, 156, 255, 0.7);
-  //color: rgba(0, 156, 255, 0.7);
-  background: 'Transparent'
+  backgroundColor: 'rgba(6, 171, 232, 0.86)'
 }
-
 
 export default class Countdown extends Component{
   constructor(props) {
@@ -17,8 +14,7 @@ export default class Countdown extends Component{
       duration: this.getRemaingTime(),
       paused: false
     }
-
-    this.togglePaused = this.togglePaused.bind(this)
+    //this.togglePaused = this.togglePaused.bind(this)
   }
 
   componentDidMount() {
@@ -35,12 +31,12 @@ export default class Countdown extends Component{
 
   getRemaingTime() {
     let now = moment(),
-      newYear = moment({year: now.year() + 1}),
-        diff = newYear.diff(now)
+      fechaLimite = moment("2018-10-22"),
+        diff = fechaLimite.diff(now)
 
     return moment.duration(diff)
   }
-
+/*
   togglePaused() {
     this.setState((prevState, props) => {
       const paused = !prevState.paused
@@ -58,7 +54,7 @@ export default class Countdown extends Component{
           paused
       }
     })
-  }
+  }*/
 
   render() {
     const { duration } = this.state
@@ -71,25 +67,25 @@ export default class Countdown extends Component{
               <nav className="level">
                 <div className="level-item has-text-centered">
                   <div>
-                    <p className="heading">Days</p>
+                    <p className="heading">Dias</p>
                     <p className="title">{Math.floor(duration.asDays())}</p>
                   </div>
                 </div>
                 <div className="level-item has-text-centered">
                   <div>
-                    <p className="heading">Hours</p>
+                    <p className="heading">Horas</p>
                     <p className="title">{duration.hours().toString().padStart(2, '0')}</p>
                   </div>
                 </div>
                 <div className="level-item has-text-centered">
                   <div>
-                    <p className="heading">Minutes</p>
+                    <p className="heading">Minutos</p>
                     <p className="title">{duration.minutes().toString().padStart(2, '0')}</p>
                   </div>
                 </div>
                 <div className="level-item has-text-centered">
                   <div>
-                    <p className="heading">Seconds</p>
+                    <p className="heading">Segundos</p>
                     <p className="title">{duration.seconds().toString().padStart(2, '0')}</p>
                   </div>
                 </div>

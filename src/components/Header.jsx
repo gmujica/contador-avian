@@ -19,7 +19,7 @@ function Header(props) {
     <div className={classes.root}>
       <Grid container>
         <Grid item xs={12}>
-          <AppBar position="static  " color="primary" style={{background: "#08253C"}}>
+          <AppBar position="absolute" color="primary" style={{background: "#08253C"}}>
             <Toolbar>
               <Grid item xs={6} style={{padding: 10}}>
                 <img src={require('../img/AT.png')} width="250" height="100" alt="logo"/>
@@ -28,14 +28,13 @@ function Header(props) {
                 <Typography variant="display2" gutterBottom color="inherit">
                    Pronto Venimos
                 </Typography>
-                <Typography variant="Headline" gutterBottom color="inherit">
+                <Typography variant="headline" gutterBottom color="inherit">
                    Con nuestras sorpresas para ti!
                 </Typography>
               </Grid>
             </Toolbar>
           </AppBar>
         </Grid>
-
       </Grid>
     </div>
   );

@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react';
 import {
-  Paper,
   Grid,
   Typography
 } from '@material-ui/core/'
@@ -12,7 +11,6 @@ export class Footer extends Component {
   render() {
     return (
       <Fragment>
-          <Paper style={{background: 'Transparent'}}>
             <Grid container>
               <Grid item xs={9} style={{padding: 25}}>
                   <Typography
@@ -43,7 +41,6 @@ export class Footer extends Component {
               </Typography>
               </Grid>
             </Grid>
-          </Paper>
       </Fragment>
     );
   }
